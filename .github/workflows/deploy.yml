@@ -36,6 +36,7 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     steps:
+      # Output some useful environment info (can help with debugging)
       - name: Output information
         run: |        
           echo "MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}"
